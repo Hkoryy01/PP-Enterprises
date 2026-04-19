@@ -1,0 +1,628 @@
+<!--
+╔══════════════════════════════════════════════════════════╗
+║              EASY EDIT GUIDE - P P ENTERPRISES           ║
+╠══════════════════════════════════════════════════════════╣
+║                                                          ║
+║  HOW TO EDIT THIS WEBSITE:                               ║
+║                                                          ║
+║  1. PHONE NUMBERS:                                       ║
+║     Search for "CHANGE PHONE" to find all phone numbers  ║
+║     Replace the number inside href="tel:..." and text    ║
+║                                                          ║
+║  2. EMAIL ADDRESS:                                       ║
+║     Search for "CHANGE EMAIL" to find email addresses    ║
+║     Replace inside href="mailto:..." and the text        ║
+║                                                          ║
+║  3. WHATSAPP NUMBER:                                     ║
+║     Search for "CHANGE WHATSAPP" to find WhatsApp links  ║
+║     Replace the number after wa.me/                      ║
+║                                                          ║
+║  4. ADDRESS:                                             ║
+║     Search for "CHANGE ADDRESS" to find address text     ║
+║                                                          ║
+║  5. CONTENT TEXT:                                        ║
+║     Search for "EDIT TEXT" to find editable content       ║
+║                                                          ║
+║  6. IMAGES:                                              ║
+║     Search for "CHANGE IMAGE" to find image URLs         ║
+║     Replace the src="..." with your own image URL        ║
+║                                                          ║
+╚══════════════════════════════════════════════════════════╝
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>P P Enterprises – Reliable Packaging Solutions Since 1995</title>
+<meta name="description" content="P P Enterprises - Leading manufacturer of corrugated boxes, rolls, and paper tubes in Faridabad, Haryana. Quality packaging solutions since 1995.">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+/* ===== RESET & BASE ===== */
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',sans-serif;color:#333;overflow-x:hidden;background:#fff;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+ul{list-style:none}
+.container{max-width:1200px;margin:0 auto;padding:0 20px}
+
+/* ===== CSS VARIABLES — CHANGE COLORS HERE ===== */
+:root{
+  --primary:#0d6e3f;      /* Main green */
+  --primary-dark:#094d2c;
+  --primary-light:#11a35d;
+  --dark:#111;
+  --dark2:#1a1a1a;
+  --gray:#666;
+  --light:#f5f7f5;
+  --white:#fff;
+  --shadow:0 10px 40px rgba(0,0,0,.1);
+  --radius:12px;
+}
+
+/* ===== TOP BAR ===== */
+.top-bar{background:var(--dark);color:#ccc;font-size:13px;padding:8px 0}
+.top-bar .container{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+.top-bar a{color:#ccc;transition:color .3s}
+.top-bar a:hover{color:var(--primary-light)}
+.top-bar i{margin-right:6px;color:var(--primary-light)}
+
+/* ===== NAVBAR ===== */
+.navbar{background:var(--white);position:sticky;top:0;z-index:1000;box-shadow:0 2px 20px rgba(0,0,0,.08);transition:all .3s}
+.navbar .container{display:flex;justify-content:space-between;align-items:center;padding:12px 20px}
+.logo{display:flex;align-items:center;gap:10px;font-size:22px;font-weight:800;color:var(--dark)}
+.logo span{color:var(--primary)}
+.logo img{height:48px;width:auto}
+.nav-links{display:flex;gap:28px;align-items:center}
+.nav-links a{font-size:15px;font-weight:500;color:var(--dark);position:relative;transition:color .3s}
+.nav-links a:hover{color:var(--primary)}
+.nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--primary);transition:width .3s}
+.nav-links a:hover::after{width:100%}
+.nav-cta{background:var(--primary);color:#fff!important;padding:10px 24px;border-radius:30px;font-weight:600}
+.nav-cta:hover{background:var(--primary-dark)}
+.nav-cta::after{display:none!important}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:5px}
+.hamburger span{width:28px;height:3px;background:var(--dark);border-radius:3px;transition:all .3s}
+
+/* ===== HERO ===== */
+.hero{position:relative;min-height:92vh;display:flex;align-items:center;background:linear-gradient(135deg,rgba(5,28,15,.88) 0%,rgba(13,110,63,.60) 55%,rgba(5,28,15,.85) 100%),url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat; /* CHANGE IMAGE: hero background */}
+.hero-content{color:#fff;max-width:680px;padding:40px 0}
+.hero-badge{display:inline-block;background:rgba(255,255,255,.15);backdrop-filter:blur(8px);padding:8px 20px;border-radius:30px;font-size:13px;font-weight:500;letter-spacing:1px;margin-bottom:24px;border:1px solid rgba(255,255,255,.2)}
+.hero h1{font-size:clamp(32px,5vw,56px);font-weight:800;line-height:1.15;margin-bottom:20px}
+.hero h1 em{color:var(--primary-light);font-style:normal}
+/* EDIT TEXT: hero paragraph */
+.hero p{font-size:18px;line-height:1.7;opacity:.9;margin-bottom:36px;max-width:540px}
+.hero-btns{display:flex;gap:16px;flex-wrap:wrap}
+.btn{padding:14px 32px;border-radius:30px;font-weight:600;font-size:15px;cursor:pointer;border:none;transition:all .3s;display:inline-flex;align-items:center;gap:8px}
+.btn-primary{background:var(--primary);color:#fff}
+.btn-primary:hover{background:var(--primary-dark);transform:translateY(-2px);box-shadow:0 8px 25px rgba(13,110,63,.4)}
+.btn-outline{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.5)}
+.btn-outline:hover{border-color:#fff;background:rgba(255,255,255,.1)}
+.hero-stats{display:flex;gap:40px;margin-top:50px;padding-top:30px;border-top:1px solid rgba(255,255,255,.2)}
+.hero-stats .stat h3{font-size:34px;font-weight:800;color:var(--primary-light);letter-spacing:-0.5px}
+.hero-stats .stat p{font-size:13px;opacity:.75;margin-top:4px;letter-spacing:.5px;text-transform:uppercase;font-weight:500}
+
+/* ===== SECTIONS ===== */
+section{padding:90px 0}
+.section-header{text-align:center;margin-bottom:60px}
+.section-tag{color:var(--primary);font-weight:600;font-size:14px;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px}
+.section-header h2{font-size:clamp(28px,3.5vw,42px);font-weight:800;color:var(--dark);margin-bottom:16px}
+.section-header p{color:var(--gray);max-width:600px;margin:0 auto;line-height:1.7}
+.bg-light{background:var(--light)}
+
+/* ===== ABOUT ===== */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.about-img{position:relative;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+.about-img img{width:100%;height:420px;object-fit:cover;object-position:center center;transition:transform .4s ease}
+.about-img:hover img{transform:scale(1.03)}
+.about-img .exp-badge{position:absolute;bottom:20px;left:20px;background:var(--primary);color:#fff;padding:16px 24px;border-radius:var(--radius);text-align:center}
+.exp-badge h3{font-size:28px;font-weight:800;line-height:1}
+.exp-badge p{font-size:12px;margin-top:4px}
+.about-text h3{font-size:30px;font-weight:800;margin-bottom:16px;color:var(--dark);line-height:1.3;letter-spacing:-0.3px}
+.about-text p{color:var(--gray);line-height:1.8;margin-bottom:20px}
+.about-features{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:24px}
+.about-feature{display:flex;align-items:center;gap:10px;font-weight:500;font-size:14px}
+.about-feature i{color:var(--primary);font-size:18px}
+
+/* ===== PRODUCTS ===== */
+.products-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:30px}
+.product-card{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:transform .3s,box-shadow .3s}
+.product-card:hover{transform:translateY(-8px);box-shadow:0 20px 50px rgba(0,0,0,.15)}
+.product-card img{width:100%;height:230px;object-fit:cover;object-position:center;transition:transform .4s ease}
+.product-card:hover img{transform:scale(1.05)}
+.product-card .card-body{padding:24px}
+.product-card h3{font-size:18px;font-weight:700;margin-bottom:8px;color:var(--dark)}
+.product-card p{font-size:14px;color:var(--gray);line-height:1.6}
+.product-card .card-link{display:inline-flex;align-items:center;gap:6px;color:var(--primary);font-weight:600;font-size:14px;margin-top:14px;transition:gap .3s}
+.product-card:hover .card-link{gap:10px}
+
+/* ===== WHY CHOOSE US ===== */
+.features-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:30px}
+.feature-card{text-align:center;padding:40px 28px;background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);transition:transform .3s}
+.feature-card:hover{transform:translateY(-6px)}
+.feature-icon{width:70px;height:70px;border-radius:50%;background:linear-gradient(135deg,var(--primary),var(--primary-light));display:flex;align-items:center;justify-content:center;margin:0 auto 20px;color:#fff;font-size:28px}
+.feature-card h3{font-size:18px;font-weight:700;margin-bottom:10px;color:var(--dark)}
+.feature-card p{font-size:14px;color:var(--gray);line-height:1.7}
+
+/* ===== COMPANY INFO ===== */
+.info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px}
+.info-card{background:#fff;padding:30px;border-radius:var(--radius);box-shadow:var(--shadow);text-align:center;border-top:4px solid var(--primary)}
+.info-card i{font-size:28px;color:var(--primary);margin-bottom:12px}
+.info-card h4{font-size:14px;color:var(--gray);font-weight:500;margin-bottom:6px}
+.info-card p{font-size:16px;font-weight:700;color:var(--dark)}
+
+/* ===== CONTACT ===== */
+.contact-wrapper{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:start}
+.contact-info h3{font-size:24px;font-weight:700;margin-bottom:20px;color:var(--dark)}
+.contact-item{display:flex;gap:16px;align-items:flex-start;margin-bottom:24px}
+.contact-item .icon-box{width:50px;height:50px;border-radius:50%;background:var(--light);display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:20px;flex-shrink:0}
+.contact-item h4{font-size:15px;font-weight:600;color:var(--dark);margin-bottom:4px}
+.contact-item p,.contact-item a{font-size:14px;color:var(--gray);line-height:1.6}
+.contact-item a:hover{color:var(--primary)}
+.contact-form{background:#fff;padding:40px;border-radius:var(--radius);box-shadow:var(--shadow)}
+.contact-form h3{font-size:22px;font-weight:700;margin-bottom:24px;color:var(--dark)}
+.form-group{margin-bottom:18px}
+.form-group label{display:block;font-size:13px;font-weight:600;margin-bottom:6px;color:var(--dark)}
+.form-group input,.form-group textarea,.form-group select{width:100%;padding:12px 16px;border:2px solid #e8e8e8;border-radius:8px;font-family:inherit;font-size:14px;transition:border-color .3s;background:#fafafa}
+.form-group input:focus,.form-group textarea:focus{outline:none;border-color:var(--primary);background:#fff}
+.form-group textarea{height:110px;resize:vertical}
+.btn-submit{width:100%;background:var(--primary);color:#fff;padding:14px;border:none;border-radius:8px;font-family:inherit;font-size:16px;font-weight:600;cursor:pointer;transition:background .3s}
+.btn-submit:hover{background:var(--primary-dark)}
+
+/* ===== FOOTER ===== */
+footer{background:var(--dark);color:#ccc;padding:60px 0 0}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:40px}
+.footer-about h3{font-size:22px;font-weight:700;color:#fff;margin-bottom:14px}
+.footer-about h3 span{color:var(--primary-light)}
+.footer-about p{font-size:14px;line-height:1.8;margin-bottom:20px}
+.footer-social{display:flex;gap:12px}
+.footer-social a{width:38px;height:38px;border-radius:50%;border:1px solid #444;display:flex;align-items:center;justify-content:center;color:#ccc;transition:all .3s}
+.footer-social a:hover{background:var(--primary);border-color:var(--primary);color:#fff}
+.footer-col h4{font-size:16px;font-weight:700;color:#fff;margin-bottom:20px;position:relative;padding-bottom:10px}
+.footer-col h4::after{content:'';position:absolute;bottom:0;left:0;width:30px;height:2px;background:var(--primary)}
+.footer-col a{display:block;font-size:14px;color:#999;padding:6px 0;transition:color .3s}
+.footer-col a:hover{color:var(--primary-light);padding-left:4px}
+.footer-bottom{border-top:1px solid #2a2a2a;padding:20px 0;text-align:center;font-size:13px;color:#777}
+
+/* ===== FLOATING BUTTONS ===== */
+.floating-btns{position:fixed;bottom:24px;right:24px;display:flex;flex-direction:column;gap:12px;z-index:999}
+.float-btn{width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:24px;box-shadow:0 4px 15px rgba(0,0,0,.3);transition:transform .3s}
+.float-btn:hover{transform:scale(1.1)}
+.float-whatsapp{background:#25D366}
+.float-call{background:var(--primary)}
+
+/* ===== SCROLL TOP ===== */
+.scroll-top{position:fixed;bottom:24px;left:24px;width:44px;height:44px;background:var(--dark);color:#fff;border:none;border-radius:50%;font-size:18px;cursor:pointer;opacity:0;visibility:hidden;transition:all .3s;z-index:999;display:flex;align-items:center;justify-content:center}
+.scroll-top.visible{opacity:1;visibility:visible}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:968px){
+  .about-grid,.contact-wrapper{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .hero-stats{gap:24px}
+}
+@media(max-width:768px){
+  .nav-links{position:fixed;top:0;right:-100%;width:280px;height:100vh;background:#fff;flex-direction:column;padding:80px 30px 30px;box-shadow:-5px 0 30px rgba(0,0,0,.1);transition:right .3s;gap:0}
+  .nav-links.active{right:0}
+  .nav-links a{padding:14px 0;border-bottom:1px solid #eee;width:100%}
+  .hamburger{display:flex}
+  .hero{min-height:80vh}
+  .hero h1{font-size:28px}
+  .hero-stats{flex-direction:column;gap:16px}
+  .footer-grid{grid-template-columns:1fr}
+  .top-bar .container{flex-direction:column;text-align:center}
+  .products-grid,.features-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== TOP BAR ===== -->
+<div class="top-bar">
+  <div class="container">
+    <div>
+      <!-- CHANGE EMAIL HERE -->
+      <a href="mailto:pp.enterprises006@gmail.com"><i class="fas fa-envelope"></i>pp.enterprises006@gmail.com</a>
+    </div>
+    <div>
+      <!-- CHANGE PHONE HERE -->
+      <a href="tel:+919811228653"><i class="fas fa-phone"></i>+91 98112 28653</a>
+      &nbsp;&bull;&nbsp;
+      <!-- CHANGE PHONE HERE -->
+      <a href="tel:+918383940632"><i class="fas fa-phone"></i>+91 83839 40632</a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="#" class="logo">
+      <!-- CHANGE IMAGE: logo -->
+      <img src="images/logo.png" alt="PP Enterprises Logo">
+      P P <span>Enterprises</span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#why-us">Why Us</a>
+      <a href="#contact">Contact</a>
+      <!-- CHANGE PHONE HERE -->
+      <a href="tel:+919811228653" class="nav-cta"><i class="fas fa-phone"></i> Call Now</a>
+    </div>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO SECTION ===== -->
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">🏭 Trusted Packaging Manufacturer</div>
+      <!-- EDIT TEXT: hero heading -->
+      <h1>Reliable <em>Packaging Solutions</em> Since 1995</h1>
+      <!-- EDIT TEXT: hero paragraph -->
+      <p>P P Enterprises delivers high-quality corrugated packaging products — durable, cost-effective, and customized for industrial and commercial needs across India.</p>
+      <div class="hero-btns">
+        <!-- CHANGE WHATSAPP HERE -->
+        <a href="https://wa.me/919811228653" class="btn btn-primary" target="_blank"><i class="fab fa-whatsapp"></i> Get a Quote</a>
+        <a href="#products" class="btn btn-outline"><i class="fas fa-box"></i> Our Products</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><h3>29+</h3><p>Years Experience</p></div>
+        <div class="stat"><h3>500+</h3><p>Happy Clients</p></div>
+        <div class="stat"><h3>1M+</h3><p>Boxes Delivered</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img">
+        <!-- CHANGE IMAGE: about section -->
+        <img src="images/corrugated-box.png" alt="PP Enterprises - Packaging Solutions">
+        <div class="exp-badge"><h3>29+</h3><p>Years of Trust</p></div>
+      </div>
+      <div class="about-text">
+        <div class="section-tag">About Us</div>
+        <!-- EDIT TEXT: about heading and description -->
+        <h3>A Trusted Name in Corrugated Packaging</h3>
+        <p>P P Enterprises, located in the Sarurpur Industrial Area of Faridabad, Haryana, is a proprietorship firm specializing in high-quality corrugated packaging. Established in 1995, we have built a reputation for excellence, reliability, and customer-first service.</p>
+        <p>Our products — from corrugated boxes to paper tubes — are manufactured with precision using quality raw materials and modern production techniques.</p>
+        <div class="about-features">
+          <div class="about-feature"><i class="fas fa-check-circle"></i> ISO Standard Quality</div>
+          <div class="about-feature"><i class="fas fa-check-circle"></i> Custom Packaging</div>
+          <div class="about-feature"><i class="fas fa-check-circle"></i> On-Time Delivery</div>
+          <div class="about-feature"><i class="fas fa-check-circle"></i> Competitive Pricing</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRODUCTS ===== -->
+<section id="products" class="bg-light">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Our Products</div>
+      <h2>Premium Packaging Solutions</h2>
+      <p>We manufacture a wide range of corrugated packaging products tailored to your business needs.</p>
+    </div>
+    <div class="products-grid">
+      <!-- Product 1: Corrugated Rolls -->
+      <div class="product-card">
+        <!-- CHANGE IMAGE: product 1 (Corrugated Rolls) -->
+        <img src="images/corrugated-roll-new.png" alt="Corrugated Rolls">
+        <div class="card-body">
+          <h3>Corrugated Rolls</h3>
+          <p>High-quality corrugated rolls for protective wrapping and cushioning. Available in all standard and custom sizes.</p>
+          <a href="#contact" class="card-link">Enquire Now <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <!-- Product 2: Printed Corrugated Boxes -->
+      <div class="product-card">
+        <!-- CHANGE IMAGE: product 2 (Printed Corrugated Boxes) -->
+        <img src="images/printed-box.png" alt="Printed Corrugated Boxes">
+        <div class="card-body">
+          <h3>Printed Corrugated Boxes</h3>
+          <p>Custom printed boxes with high-quality graphics for branding. Perfect for retail and e-commerce packaging.</p>
+          <a href="#contact" class="card-link">Enquire Now <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <!-- Product 3: Corrugated Boxes 3 Ply -->
+      <div class="product-card">
+        <!-- CHANGE IMAGE: product 3 (Corrugated Boxes 3 Ply) -->
+        <img src="images/corrugated-box.png" alt="Corrugated Boxes 3 Ply">
+        <div class="card-body">
+          <h3>Corrugated Boxes (3 Ply)</h3>
+          <p>Sturdy 3-ply corrugated boxes for safe transportation and storage. Available in standard and custom dimensions.</p>
+          <a href="#contact" class="card-link">Enquire Now <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <!-- Product 4: Paper Tubes -->
+      <div class="product-card">
+        <!-- CHANGE IMAGE: product 4 (Paper Tubes) — replace src with images/paper-tube.png once saved -->
+        <img src="images/paper-tube.png" alt="Paper Tubes"
+          onerror="this.onerror=null;this.src='https://img.freepik.com/free-photo/cardboard-tubes-white-background_1150-35561.jpg?w=826'"
+        >
+        <div class="card-body">
+          <h3>Paper Tubes</h3>
+          <p>Durable paper tubes for various industrial applications. Custom diameters and lengths available on request.</p>
+          <a href="#contact" class="card-link">Enquire Now <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY CHOOSE US ===== -->
+<section id="why-us">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Why Choose Us</div>
+      <h2>The PP Enterprises Advantage</h2>
+      <p>We combine quality craftsmanship with modern manufacturing to deliver the best packaging solutions.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fas fa-award"></i></div>
+        <h3>Premium Quality</h3>
+        <p>Manufactured with top-grade raw materials ensuring strength and durability in every product.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fas fa-cogs"></i></div>
+        <h3>Custom Solutions</h3>
+        <p>Fully customizable packaging designs tailored to your specific business requirements.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fas fa-truck"></i></div>
+        <h3>Timely Delivery</h3>
+        <p>Reliable on-time delivery with efficient logistics and supply chain management.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fas fa-tags"></i></div>
+        <h3>Best Pricing</h3>
+        <p>Competitive wholesale prices without compromising quality. Bulk order discounts available.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== COMPANY INFO ===== -->
+<section class="bg-light">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Company Information</div>
+      <h2>At a Glance</h2>
+    </div>
+    <div class="info-grid">
+      <div class="info-card"><i class="fas fa-calendar"></i><h4>Established</h4><p>1995</p></div>
+      <div class="info-card"><i class="fas fa-gavel"></i><h4>Legal Status</h4><p>Proprietorship</p></div>
+      <div class="info-card"><i class="fas fa-map-marker-alt"></i><h4>Location</h4><p>Faridabad, Haryana</p></div>
+      <div class="info-card"><i class="fas fa-users"></i><h4>Team Size</h4><p>Up to 10 Members</p></div>
+      <div class="info-card"><i class="fas fa-chart-line"></i><h4>Annual Turnover</h4><p>₹40L – ₹1.5Cr</p></div>
+      <div class="info-card"><i class="fas fa-industry"></i><h4>Industry</h4><p>Packaging Mfg.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Get In Touch</div>
+      <h2>Contact Us Today</h2>
+      <p>Have a packaging requirement? Reach out to us for customized solutions at the best prices.</p>
+    </div>
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <h3>Reach Us Directly</h3>
+        <div class="contact-item">
+          <div class="icon-box"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <h4>Our Address</h4>
+            <!-- CHANGE ADDRESS HERE -->
+            <p>Plot No. 22, Road No. W-6, Sarurpur Industrial Area, Sohna Road, Faridabad – 121006</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon-box"><i class="fas fa-phone-alt"></i></div>
+          <div>
+            <h4>Phone Numbers</h4>
+            <!-- CHANGE PHONE HERE -->
+            <a href="tel:+919811228653">+91 98112 28653</a><br>
+            <!-- CHANGE PHONE HERE (CEO) -->
+            <a href="tel:+918383940632">+91 83839 40632 (Mehak Gupta – CEO)</a><br>
+            <!-- CHANGE PHONE HERE (Accountant) -->
+            <a href="tel:+919319595400">+91 93195 95400 (Anirudh Gupta – Accounts)</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon-box"><i class="fas fa-envelope"></i></div>
+          <div>
+            <h4>Email</h4>
+            <!-- CHANGE EMAIL HERE -->
+            <a href="mailto:pp.enterprises006@gmail.com">pp.enterprises006@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon-box"><i class="fab fa-whatsapp"></i></div>
+          <div>
+            <h4>WhatsApp</h4>
+            <!-- CHANGE WHATSAPP HERE -->
+            <a href="https://wa.me/919811228653" target="_blank">Chat with us on WhatsApp</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon-box"><i class="fas fa-clock"></i></div>
+          <div>
+            <h4>Business Hours</h4>
+            <p>Mon – Sat: 9:00 AM – 7:00 PM</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTACT FORM -->
+      <div class="contact-form">
+        <h3>Send Us a Message</h3>
+        <form id="contactForm" onsubmit="handleFormSubmit(event)">
+          <div class="form-group">
+            <label for="name">Your Name *</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+          </div>
+          <div class="form-group">
+            <label for="product">Product Interest</label>
+            <select id="product" name="product">
+              <option value="">Select a product</option>
+              <option>Corrugated Rolls</option>
+              <option>Printed Corrugated Boxes</option>
+              <option>Corrugated Boxes (3 Ply)</option>
+              <option>Paper Tubes</option>
+              <option>Custom Packaging</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message *</label>
+            <textarea id="message" name="message" placeholder="Describe your requirement..." required></textarea>
+          </div>
+          <button type="submit" class="btn-submit"><i class="fas fa-paper-plane"></i> Send Enquiry</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MAP ===== -->
+<div style="width:100%;height:300px;background:var(--light)">
+  <!-- CHANGE ADDRESS: update the Google Maps embed below with your address -->
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3510.4!2d77.33!3d28.38!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sSarurpur+Industrial+Area+Faridabad!5e0!3m2!1sen!2sin!4v1" width="100%" height="300" style="border:0" allowfullscreen loading="lazy"></iframe>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <h3>P P <span>Enterprises</span></h3>
+        <!-- EDIT TEXT: footer description -->
+        <p>Leading manufacturer of corrugated packaging products in Faridabad since 1995. Delivering quality, reliability, and innovation.</p>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <!-- CHANGE WHATSAPP HERE -->
+          <a href="https://wa.me/919811228653" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <a href="#products">Corrugated Rolls</a>
+        <a href="#products">Printed Boxes</a>
+        <a href="#products">3 Ply Boxes</a>
+        <a href="#products">Paper Tubes</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <!-- CHANGE PHONE HERE -->
+        <a href="tel:+919811228653"><i class="fas fa-phone"></i> +91 98112 28653</a>
+        <!-- CHANGE EMAIL HERE -->
+        <a href="mailto:pp.enterprises006@gmail.com"><i class="fas fa-envelope"></i> Email Us</a>
+        <!-- CHANGE ADDRESS HERE -->
+        <a href="#contact"><i class="fas fa-map-marker-alt"></i> Faridabad, Haryana</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 P P Enterprises. All Rights Reserved. | Designed with ❤️ for packaging excellence.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== FLOATING BUTTONS ===== -->
+<div class="floating-btns">
+  <!-- CHANGE WHATSAPP HERE -->
+  <a href="https://wa.me/919811228653" class="float-btn float-whatsapp" target="_blank" title="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+  <!-- CHANGE PHONE HERE -->
+  <a href="tel:+919811228653" class="float-btn float-call" title="Call Us"><i class="fas fa-phone-alt"></i></a>
+</div>
+
+<!-- SCROLL TO TOP -->
+<button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="fas fa-chevron-up"></i></button>
+
+<!-- ===== JAVASCRIPT ===== -->
+<script>
+// --- Mobile Menu Toggle ---
+function toggleMenu(){
+  document.getElementById('navLinks').classList.toggle('active');
+  var h=document.getElementById('hamburger');
+  h.classList.toggle('active');
+}
+// Close menu when a nav link is clicked
+document.querySelectorAll('.nav-links a').forEach(function(link){
+  link.addEventListener('click',function(){
+    document.getElementById('navLinks').classList.remove('active');
+  });
+});
+
+// --- Scroll: sticky navbar shadow & scroll-top button ---
+window.addEventListener('scroll',function(){
+  var st=document.getElementById('scrollTop');
+  if(window.scrollY>400){st.classList.add('visible')}else{st.classList.remove('visible')}
+});
+
+// --- Contact Form Handler ---
+function handleFormSubmit(e){
+  e.preventDefault();
+  var name=document.getElementById('name').value;
+  var phone=document.getElementById('phone').value;
+  var email=document.getElementById('email').value||'Not provided';
+  var product=document.getElementById('product').value||'Not specified';
+  var message=document.getElementById('message').value;
+  // Build WhatsApp message
+  // CHANGE WHATSAPP HERE — change the number below to receive form messages
+  var waMsg='*New Enquiry from Website*%0A'
+    +'Name: '+name+'%0A'
+    +'Phone: '+phone+'%0A'
+    +'Email: '+email+'%0A'
+    +'Product: '+product+'%0A'
+    +'Message: '+message;
+  window.open('https://wa.me/919811228653?text='+waMsg,'_blank');
+  alert('Thank you, '+name+'! Your enquiry has been sent. We will contact you shortly.');
+  e.target.reset();
+}
+
+// --- Simple Scroll Animation ---
+var observer=new IntersectionObserver(function(entries){
+  entries.forEach(function(entry){
+    if(entry.isIntersecting){entry.target.style.opacity='1';entry.target.style.transform='translateY(0)'}
+  });
+},{threshold:0.1});
+document.querySelectorAll('.product-card,.feature-card,.info-card,.about-grid,.contact-wrapper').forEach(function(el){
+  el.style.opacity='0';el.style.transform='translateY(30px)';el.style.transition='all 0.6s ease';
+  observer.observe(el);
+});
+</script>
+</body>
+</html>
